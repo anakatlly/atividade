@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placar simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-placar">
+        <table class="placar">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                    <th>Placar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>time A</td>
+                    <td id="pontosA">0</td>
+                    <button onclick="alterarpontos('A',1)">+1</button>
+                    <button onclick="alterarpontos('A',-1)">-1</button>
+                </tr>
+                <tr>
+                    <td>time B</td>
+                    <td id="pontosB">0</td>
+                    <button onclick="alterarpontos('B',1)">+1</button>
+                    <button onclick="alterarpontos('B',-1)">-1</button>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="zerarpontos()">zerar pontos</button>
+    </div>
+    <script src="assets/js/placar.js"></script>
+</body>
+</html>
